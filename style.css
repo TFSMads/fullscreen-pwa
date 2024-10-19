@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none; /* Disable text/image selection */
+  -webkit-user-select: none; /* For Safari/iOS */
+  -webkit-touch-callout: none; /* Prevent long-press actions (iOS context menu) */
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Disable scrolling */
+  background-color: #05152C;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #05152C;
+  pointer-events: none; /* Disable all interactions */
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#displayedImage {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  -webkit-user-drag: none; /* Disable drag behavior on images */
+  pointer-events: none; /* Disable any interaction on the image */
+}
+
+#uploadBtn {
+  pointer-events: auto; /* Enable interaction for the upload button */
+}
+
+#imageInput {
+  pointer-events: auto; /* Enable interaction for the file input */
+}
